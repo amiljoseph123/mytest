@@ -6,6 +6,7 @@
     form {
       max-width: 500px;
       margin: auto;
+      
     }
     label, input, select {
       display: block;
@@ -21,12 +22,13 @@
 </head>
 <body>
 
-  <h2 style="text-align: center;">Asset Entry Form</h2>
+  <h2 style="text-align: center;">Create Asset</h2>
 
-  <form method="POST" action="">
+  <form method="POST" action="insert.php">
     <label>Asset Type <span style="color:red">*</span></label>
     <select name="asset_type" required>
       <option value="">--Select Type--</option>
+      <option value="ID Card">Computers&Printers</option>
       <option value="ID Card">ID Card</option>
       <option value="Stationary">Stationary</option>
       <option value="Electronics">Electronics</option>
