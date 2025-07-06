@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Assets</title>
+  <style>
+    form {
+      max-width: 500px;
+      margin: auto;
+    }
+    label, input, select {
+      display: block;
+      margin: 10px 0;
+      width: 100%;
+      padding: 8px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align: center;">Asset Entry Form</h2>
+
+  <form method="POST" action="">
+    <label>Asset Type <span style="color:red">*</span></label>
+    <select name="asset_type" required>
+      <option value="">--Select Type--</option>
+      <option value="ID Card">ID Card</option>
+      <option value="Stationary">Stationary</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Furniture">Furniture</option>
+    </select>
+
+    <label>Type Specification</label>
+    <input type="text" name="type_specification">
+
+    <label>Model <span style="color:red">*</span></label>
+    <input type="text" name="model" required>
+
+    <label>Asset Name <span style="color:red">*</span></label>
+    <input type="text" name="asset_name" required>
+
+    <label>Brand</label>
+    <input type="text" name="brand">
+
+    <label>Serial Number</label>
+    <input type="text" name="serial_no">
+
+    <label>Warranty</label>
+    <input type="text" name="warranty">
+
+    <label>Value <span style="color:red">*</span></label>
+    <input type="text" name="value" required>
+
+    <button type="reset">Cancel</button>
+    <button type="submit" name="save">Save</button>
+  </form>
+
+</body>
+</html>
